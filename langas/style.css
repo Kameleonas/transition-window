@@ -1,0 +1,44 @@
+html{
+    margin: auto;
+    padding: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Background{
+    height: 20vh;
+    width: 20vw;
+    border: 3px solid black;
+    z-index: 0;
+    position: absolute;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.frame{
+    height: 20vh;
+    width: 20vw;
+    border: 3px solid black;
+    background: linear-gradient(red,orange,blue,yellow);
+    transform-origin: top;
+    transition: 4s;    
+    transform:perspective(1000px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.frame:hover{
+    transform: rotateX(180deg);
+}
+.knob{
+    width: 5px;
+    height: 3px;
+    border: solid 3px black;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: 5px ;
+}
